@@ -58,7 +58,7 @@ def update_firewall_rules(zones_list):
                         print('Error: {}'.format(response.json()['errors'][0]['message']))
                         continue
                     else:
-                        print('Updated firewall rule {}'.format(rule['description']))
+                        print('Updated firewall rule {} for {}'.format(rule['description'], zone['domain']))
                         break
                     
 
